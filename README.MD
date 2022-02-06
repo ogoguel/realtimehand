@@ -4,7 +4,7 @@ Unity package to track a hand in realtime!
 
 ## Sample Video
 
-<video src='Sample.mov' width=640/>
+<video src='Sample.mov' width=640></video>
 
 ## Features
 * 60 FPS hand detection
