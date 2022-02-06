@@ -1,0 +1,10 @@
+.vs
+*.csproj
+*.sln
+RealtimeHandSample/Library/
+RealtimeHandSample/bin/
+RealtimeHandSample/Logs/
+RealtimeHandSample/obj/
+RealtimeHandSample/Temp/
+RealtimeHandSample/UserSettings/
+

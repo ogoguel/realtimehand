@@ -1,0 +1,2 @@
+Copyright (c) Olivier Goguel 2021
+Licensed under the MIT License.

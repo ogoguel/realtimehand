@@ -1,0 +1,12 @@
+{
+  "name": "com.freetoolsassociation.swiftsupport",
+  "displayName": "Swift Support",
+  "version": "1.0.0",
+  "description": "Swift Support",
+  "keywords": [
+    "unity"
+  ],
+  "type": "template",
+  "dependencies": {
+  }
+}
