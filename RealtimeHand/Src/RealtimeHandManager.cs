@@ -57,12 +57,9 @@ namespace RTHand
             {
                 if (ARSession.state == ARSessionState.SessionTracking)
                 {
-                    bool success = realtimeHand.Initialize(session, cameraManager, _arg.displayMatrix.Value);
-                    if (!success)
-                    {
-                        return;
-                    }
+                    realtimeHand.Initialize(session, cameraManager, _arg.displayMatrix.Value);
                 }
+                return;
             }
 
             environmentDepth = CPUEnvironmentDepth.Create(occlusionManager);

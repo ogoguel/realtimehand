@@ -17,11 +17,9 @@ https://user-images.githubusercontent.com/674951/152693534-cf32f285-c99c-4f66-ac
 * iPhone with Lidar support
 
 ## Installation
-* Add the package `RealtimeHand `to your manifest
+* Add the package `RealtimeHand` to your manifest
 * Add the `SwiftSupport`package to enable swift development
-* Configure 
-
-Check the ``RealtimeHandSamplee``for details
+* Check the `RealtimeHandSample` for usage
 
 ## Classes
 
@@ -43,7 +41,7 @@ Steps:
 * Configure it with the `ARSession`, `ARCameraManager`, `AROcclusionManager`objects
 * Subscribe to  `Action<RealtimeHand> HandUpdated;`to be notified
 
->  OcclusionManager must be configured with `temporalSmoothing=Off`and
+>  OcclusionManager must be configured with `temporalSmoothing=Off` and
 > `mode=fastest`for optimal result
 
 
@@ -56,9 +54,9 @@ If you want to have a full control on the flow, you can manually intialize and c
 * `Joints`: dictionary of the all the joints 
 
 #### Functions
-* ``Initialize(ARSession  _session, ARCameraManager  _arCameraManager, Matrix4x4  _unityDisplayMatrix)``:  initialize the object with the required components
+* `Initialize(ARSession  _session, ARCameraManager  _arCameraManager, Matrix4x4  _unityDisplayMatrix)` :  initialize the object with the required components
 >  The session must be in tracking mode 
-* ``Dispose()``:  release the component and it resources
+*  `Dispose()` :  release the component and it resources
 *  `Process( CPUEnvironmentDepth  _environmentDepth, CPUHumanStencil  _humanStencil ) `: launch the detection method using the depth buffers
 
 Check the ``RealtimeHandManager``as an example
@@ -67,11 +65,13 @@ Check the ``RealtimeHandManager``as an example
 ## Under the hood
 When a camera frame is received :
 * Execute synchronously `VNDetectHumanHandPoseRequest` to retrieve a 2D pose estimation from the OS
-* Retrieve the `environmentDepth`and `'humanStencil`CPU images 
+* Retrieve the `environmentDepth` and `'humanStencil`CPU images 
 * From the 2D position of each bone, extract its 3D distance using the depth images to reconstruct a 3D position
 
 ## References
-* Linkedin Post
+* Linkedin Original Post : https://www.linkedin.com/posts/oliviergoguel_unity-arkit-arfoundation-activity-6896360209703407616-J3K7
 
-## Revision
-1.0.0  Initial Release
+
+## Revisions
+* Added Lightning Shader & effects
+* Initial Release
