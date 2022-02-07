@@ -2,21 +2,21 @@
 
 Unity package to track a hand in realtime!
 
-## Sample Videos
-
-https://user-images.githubusercontent.com/674951/152693534-cf32f285-c99c-4f66-acd8-c1d583603b19.mov
-
-https://user-images.githubusercontent.com/674951/152869373-a39991f0-9ef4-40d7-9b58-d7b3b40a033b.mov
-
-
 ## Features
 * 60 FPS hand detection
 * 3D Bones world detection
 
+## Sample Videos
+
+https://user-images.githubusercontent.com/674951/152693534-cf32f285-c99c-4f66-acd8-c1d583603b19.mov
+
+https://user-images.githubusercontent.com/674951/152869740-b0111ce1-e24d-4a8c-8aa0-8a98320e5e25.mov 
+
+
 ## Requirements
 * Unity 2021.2+
 * ARFoundation
-* iPhone with Lidar support
+* iPhone with Lidar support (iPhone 12+ Pro)
 
 ## Installation
 * Add the package `RealtimeHand` to your manifest
