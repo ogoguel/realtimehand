@@ -2,9 +2,11 @@
 
 Unity package to track a hand in realtime!
 
-## Sample Video
+## Sample Videos
 
 https://user-images.githubusercontent.com/674951/152693534-cf32f285-c99c-4f66-acd8-c1d583603b19.mov
+
+https://user-images.githubusercontent.com/674951/152869373-a39991f0-9ef4-40d7-9b58-d7b3b40a033b.mov
 
 
 ## Features
