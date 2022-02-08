@@ -32,7 +32,7 @@ https://user-images.githubusercontent.com/674951/152869740-b0111ce1-e24d-4a8c-8a
 *  `name`: name of the joint, matching the native one
 * `distance`: distance from camera in meter
 * `isVisible`: if the joint has been identified (from the native pose detection)
-*`confidence`: confidence of the detection
+* `confidence`: confidence of the detection
 
 ### `RTHand.RealtimeHandManager`
 Do most of the heavy work for you : just add it to your project, and subscribe to the ``HandUpdated` event to be notified when a hand pose has been detected
