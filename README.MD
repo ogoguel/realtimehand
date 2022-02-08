@@ -14,7 +14,7 @@ https://user-images.githubusercontent.com/674951/152869740-b0111ce1-e24d-4a8c-8a
 
 
 ## Requirements
-* Unity 2021.2+
+* Unity 2020.3 LTS 
 * ARFoundation
 * iPhone with Lidar support (iPhone 12+ Pro)
 
@@ -75,5 +75,6 @@ When a camera frame is received :
 
 
 ## Revisions
+* Fix compatibility with Unity 2020.3
 * Added Lightning Shader & effects
 * Initial Release
