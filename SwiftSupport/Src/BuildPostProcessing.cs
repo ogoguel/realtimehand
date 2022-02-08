@@ -34,7 +34,7 @@ public static class BuildPostProcessing
         var moduleFile = path + "/UnityFramework/UnityFramework.modulemap";
         if (!File.Exists(moduleFile))
         {
-            FileUtil.CopyFileOrDirectory("Packages/com.freetoolsassociation.realtimehand/Build/UnityFramework.modulemap", moduleFile);
+            FileUtil.CopyFileOrDirectory("Packages/com.freetoolsassociation.swiftsupport/Src/UnityFramework.modulemap", moduleFile);
             proj.AddFile(moduleFile, "UnityFramework/UnityFramework.modulemap");
             proj.AddBuildProperty(targetGUID, "MODULEMAP_FILE", "$(SRCROOT)/UnityFramework/UnityFramework.modulemap");
         }
@@ -42,9 +42,7 @@ public static class BuildPostProcessing
         proj.AddBuildProperty(targetGUID, "SWIFT_VERSION", "5.0");
         proj.SetBuildProperty(targetGUID, "COREML_CODEGEN_LANGUAGE", "Swift");
                 
-        //add handmodel to xcode proj build phase.
-        var buildPhaseGUID = proj.AddSourcesBuildPhase(targetGUID);
-
+  
          // Headers
         string unityInterfaceGuid = proj.FindFileGuidByProjectPath("Classes/Unity/UnityInterface.h");
         proj.AddPublicHeaderToBuild(targetGUID, unityInterfaceGuid);
