@@ -39,7 +39,7 @@ public static class BuildPostProcessing
             proj.AddBuildProperty(targetGUID, "MODULEMAP_FILE", "$(SRCROOT)/UnityFramework/UnityFramework.modulemap");
         }
                 
-        proj.AddBuildProperty(targetGUID, "SWIFT_VERSION", "5.0");
+        proj.SetBuildProperty(targetGUID, "SWIFT_VERSION", "5.5");
         proj.SetBuildProperty(targetGUID, "COREML_CODEGEN_LANGUAGE", "Swift");
                 
   
