@@ -18,51 +18,10 @@ namespace RTHand
             return res;
         }
 
-        public static float GetHumanDistanceFromEnvironmentNEW(CPUEnvironmentDepth _depth, CPUHumanStencil _humanStencil, Vector2 _screenPosition, int _rayon = 5)
-        {
-            int depthX = (int)(_screenPosition.x * _depth.width);
-            int depthY = (int)(_screenPosition.y * _depth.height);
-
-            int nb = 0;
-            float totalDistance = 0;
-            for (int x = -_rayon; x <= _rayon; x++)
-            {
-                for (int y = -_rayon; y <= _rayon; y++)
-                {
-                    int idx = (depthX + x) + (depthY + y) * _depth.width;
-                    if (idx < 0 || idx >= _depth.pixels.Length)
-                    {
-                        continue;
-                    }
-
-                    var stencil = _humanStencil.pixels[idx];
-                    if (stencil < 128)
-                    {
-                        continue;
-                    }
-
-                    float dist = _depth.pixels[idx];
-                    if (dist == 0)
-                    {
-                        continue;
-                    }
-                    totalDistance += dist;
-                    nb++;
-                }
-            }
-
-            return (totalDistance / nb);
-
-        }
-
-
-
         public static float GetHumanDistanceFromEnvironment(CPUEnvironmentDepth _depth, CPUHumanStencil _humanStencil, Vector2 _screenPosition, int _rayon = 5)
         {
             int depthX = (int)(_screenPosition.x * _depth.width);
             int depthY = (int)(_screenPosition.y * _depth.height);
-
-
             int nbValid = 0;
             int nbZero = 0;
 
@@ -98,11 +57,8 @@ namespace RTHand
                     {
                         nbValid++;
                     }
-
-
                 }
             }
-
 
             float min = 1000;
             float max = -1000;
@@ -112,8 +68,6 @@ namespace RTHand
                 if (dist == 0) continue;
                 if (dist < min) min = dist;
                 if (dist > max) max = dist;
-
-                //       total += distances[d];
             }
 
             float total = 0;
@@ -130,7 +84,6 @@ namespace RTHand
                     total += dist;
                     nbValid++;
                 }
-
             }
 
             return total / nbValid;
