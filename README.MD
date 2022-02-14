@@ -2,6 +2,8 @@
 
 Unity package to track a hand in realtime!
 
+As seen on "Let's All Be Wizards!" : https://apps.apple.com/app/id1609685010
+
 ## Features
 * 60 FPS hand detection
 * 3D Bones world detection
@@ -67,7 +69,7 @@ Check the ``RealtimeHandManager``as an example
 ## Under the hood
 When a camera frame is received :
 * Execute synchronously `VNDetectHumanHandPoseRequest` to retrieve a 2D pose estimation from the OS
-* Retrieve the `environmentDepth` and `'humanStencil`CPU images 
+* Retrieve the `environmentDepth` and `'humanStencil` CPU images 
 * From the 2D position of each bone, extract its 3D distance using the depth images to reconstruct a 3D position
 
 ## References
