@@ -1,6 +1,6 @@
 # Realtime Hand
 
-Unity package to track a hand in realtime!
+Unity AR package to track your hand in realtime!
 
 As seen on "Let's All Be Wizards!" : https://apps.apple.com/app/id1609685010
 
