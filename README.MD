@@ -74,6 +74,7 @@ When a camera frame is received :
 
 ## References
 * Linkedin Original Post : https://www.linkedin.com/posts/oliviergoguel_unity-arkit-arfoundation-activity-6896360209703407616-J3K7
+* Making Of : https://www.linkedin.com/feed/update/urn:li:activity:6904398846399524864/
 
 
 ## Revisions
